@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container
+{
+	border-color:#FFF;
+	color:#FFF;
+}
+#logo
+{
+	height:10%;
+	width:100%;
+	//border:1px solid #FFF;
+}
+	#logoimg
+	{
+		margin-top:0.5%;
+	}
+	#marquee
+	{
+		width:10%;
+		//border:1px solid #FFF;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#06C;
+		text-decoration:blink;
+	}
+#texthead
+{
+	//border:1px solid #FFF;
+}
+	#signuptext
+	{
+		margin-top:1%;
+		margin-bottom:0%;
+		color:#FFF;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:28px;
+	}
+	#signinlink
+	{
+		margin-top:1%;
+		color:#FFF;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:16px;
+	}
+	a
+	{
+		text-decoration:none;
+		color:#3FF;
+	}
+#signupform
+{
+	height:420px;
+	width:80%;
+	//border:1px solid #FFF;
+}
+	#forms1
+	{
+		margin:1%;
+		margin-left:5%;
+		margin-right:0%;
+		height:80%;
+		width:45%;
+		//border:1px solid #FFF;
+		float:left;
+	}
+	#forms2
+	{
+		margin:1%;
+		margin-left:0%;
+		height:80%;
+		width:45%;
+		//border:1px solid #FFF;
+		border-left:1px solid #FFF;
+		float:left;
+
+	}
+	
+	#signuptextboxes
+	{
+		margin-top:2%;
+		border-radius:6px;
+		background-color:#FFF;
+		color:#081116;
+		height:30px;
+		width:80%;
+		font-size:18px;
+		padding:5px;
+		border:none;
+		box-shadow: 0 12px 16px 12px rgba(2,2,2,2), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	.signuptextboxes
+	{
+		margin-top:5%;
+		border-radius:6px;
+		background-color:#FFF;
+		color:#081116;
+		height:30px;
+		width:80%;
+		font-size:18px;
+		padding:5px;
+		border:none;
+		box-shadow: 0 12px 16px 12px rgba(2,2,2,2), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	
+	#signupbutton
+	{
+		margin-top:8%;
+		margin-bottom:2%;
+		border-radius:6px;
+		background-color:#FFF;
+		color:#081116;
+		font-size:24px;
+		padding:5px;
+		border:none;
+		box-shadow: 0 2px 6px 2px rgba(2,2,2,2), 0 7px 0px 0 rgba(0,0,0,0.19);
+		
+	}
+	#signupbutton:hover
+	{
+		cursor:pointer;
+		background-color:#FFF;
+		color:#081116;
+		font-weight:bold;
+		box-shadow: 0 12px 16px 12px rgba(2,2,2,2), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	.tc
+	{
+		font-size:9px;
+	}
+	
+#footer
+{
+	
+}
+#copyright
+{
+	
+}

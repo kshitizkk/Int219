@@ -1,0 +1,53 @@
+<?php
+// Start the session
+session_start();
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<?php
+	if(isset($_POST['loginbutton']))
+	{
+		$enteredemail=$_POST['enteredemail'];
+		strtolower($enteredemail);
+		$enteredpassword=$_POST['enteredpassword'];
+		$enteredpassword= md5($enteredpassword);
+						
+		$servername = "localhost";
+		$username = "root";
+		$password = "";
+		$dbname = "id8858724_esurfandshop_store";
+		// Create connection
+		$conn = mysqli_connect($servername, $username, $password, $dbname);
+		
+		$query = "SELECT userid, password FROM users WHERE username='$enteredemail'";
+		$result = mysqli_query($conn,$query);
+		$row=mysqli_num_rows($result);
+		while($row>0)
+		{
+			$fetchedpassword=$row["password"];
+			$_SESSION['userid']=$row["userid"];
+		}
+			 
+			 if($fetchedpassword==$enteredpassword)
+			 {
+				 echo $_SESSION['userid'];
+					// Redirect user to index.html
+				 header("Location: MainHomePage After Login.html");
+			 }
+			 else
+			 {
+				echo "<div class='form'>
+				<h3>Password is incorrect.</h3>
+				<br/>Click here to <a href='MainHomePage.html'>Login</a></div>";
+			 }
+   		}
+		
+?>
+</body>
+</html>

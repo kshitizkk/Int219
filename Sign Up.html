@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>esurf&amp;shop.in/SignUp</title>
+<link rel="stylesheet" type="text/css" media="all" href="../CSS/SignUp.css" />
+</head>
+
+<body bgcolor="#081116">
+<div id="container" style="width:100%" style="height:auto">
+	<div id="logo">
+    	<center>
+        <img id="logoimg" height="60px" width="auto" src="../../Documents/ASSETS/home page/logo.png" />
+        <div id="marquee">
+        <marquee scrolldelay="200" align="middle">esurfandshop.in</marquee>
+        </div>
+        </center>    
+    </div>
+    <div id="texthead">
+    	<center>
+              <p id="signuptext">Sign-Up</p>
+              <p id="signinlink">Already Have Account?&nbsp;<a href="MainHomePage.html"><b>Sign In</b></a></p>
+          </center>    
+    </div>
+    <center>
+    <div id="signupform">
+    
+                    <div id="forms1">
+                    </div>
+                    <div id="forms2">
+                    
+                    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                    <input id="signuptextboxes" type="text" placeholder="User ID" name="userid" required="required" /><br />                    
+                    <input class="signuptextboxes" type="email" placeholder="E-mail" name="email" required="required" /><br />
+                    <input class="signuptextboxes" type="password" placeholder="Password" name="password" required="required" /><br />
+                    <input class="signuptextboxes" type="password" placeholder="Confirm Password" name="cpassword" required="required" /><br />
+                    <a href=><button id="signupbutton" name="signupbutton">SignUp</button></a>
+                    </form>
+                    <a class="tc" href="">*By Signing Up You Agree To Our Terms And Conditions....</a>
+                    <?php
+					if(isset($_POST['signupbutton']))
+					{
+						$userid=$_POST['userid'];
+						strtoupper($userid);
+						$email=$_POST['email'];
+						strtolower($email);
+						$password=$_POST['password'];
+						
+						$servername = "localhost";
+						$username = "root";
+						$password = "";
+						$dbname = "id8858724_esurfandshop_store";
+						
+						// Create connection
+						$conn = mysqli_connect($servername, $username, $password, $dbname);
+						// Check connection
+						if (!$conn)
+						{
+							echo "<script type='text/javascript'> alert('Database Not Responding'); </script>";
+						}
+						
+						$sql = "INSERT INTO users VALUES ('$userid', '$email', '".md5($password)."')";
+						
+						if (mysqli_query($conn, $sql)) 
+						{
+							echo "<script type='text/javascript'> alert('You Have Signed Up Successfully.Welcome To The esurfandshop.in World 👍'); </script>";
+						} 
+						else 
+						{
+							echo "<script type='text/javascript'> alert('Entered Email-ID Already Exists...For Log-In Click OK Button.'); </script>";
+						}
+						
+						mysqli_close($conn);
+					}
+					?>
+                    </div>
+    </div>
+	<div id="footer">
+    
+    </div>
+    <div id="copyright">
+    
+    </div>
+    </center>
+</div>
+</body>
+</html>

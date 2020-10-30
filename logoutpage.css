@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+		#userid
+		{
+			border:2px solid #FF0;
+			background-color:#00a99e;
+			border-style:none;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:16px;
+			font-weight:545;
+			color:#000;
+			cursor:pointer;
+			margin-top:-2%;
+		}
+		
+		#loutbutton
+		{
+			border:2px solid #FF0;
+			background-color:#00a99e;
+			border-style:none;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:14px;
+			font-weight:545;
+			color:#FFF;
+			cursor:pointer;
+			margin-top:-5%;
+		}	
+		#loutbutton:hover
+		{
+			font-weight:600;
+		}

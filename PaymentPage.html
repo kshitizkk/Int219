@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" media="all" href="../CSS/PaymentPage.css" />
+<title>🚚E-SurfAndShop/Payment</title>
+<style>
+.select1
+{
+	//border:1px solid #333;
+	margin-left:3.8%;
+	margin-right:3%;
+	margin-top:1%;
+	margin-bottom:0%;
+	text-decoration:none;
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+}
+.select
+{
+	//border:1px solid #333;
+	margin-left:3.8%;
+	margin-right:3%;
+	margin-top:0.5%;
+	margin-bottom:0%;
+	text-decoration:none;
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+}
+.paymethoddiv1
+{
+	//border:1px solid #333;
+	height:auto;
+	margin-left:4%;
+	margin-right:3%;
+	margin-top:0%;
+	text-decoration:none;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.paymethoddiv
+{
+	//border:1px solid #333;
+	height:auto;
+	margin-left:4%;
+	margin-right:3%;
+	margin-top:0%;
+	text-decoration:none;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.paymethoddiv6
+{
+	//border:1px solid #333;
+	height:auto;
+	margin-left:3.8%;
+	margin-right:3%;
+	margin-top:0%;
+	text-decoration:none;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.cardno
+{
+	border:1px solid #333;
+	height:10%;
+	margin-left:2%;
+	width:50%;
+	border-radius:5px;
+	margin-top:5px;
+}
+.cardnotextbox
+{
+	border:none;
+	font-size:14px;
+	width:290px;
+	height:21.5px;
+	margin-left:10px;
+}
+.cardnotextbox
+{
+	border:none;
+}
+.paygatewayimg
+{
+	//border:1px solid #333;
+	width:60px;
+	height:18px;
+	float:right;
+	margin-right:2%;
+	margin-top:0.5%;
+}
+.expcvv
+{
+	//border:1px solid #333;
+	height:10%;
+	margin-left:2%;
+	width:100%;
+	border-radius:5px;
+	margin-top:5px;
+	float:left;
+}
+.expiry
+{
+	border:1px solid #333;
+	height:10%;
+	margin-left:0%;
+	width:28%;
+	border-radius:5px;
+	margin-top:5px;
+	float:left;
+	color:#000;
+}
+.exptext
+{
+	margin-left:3px;
+	float:left;
+	margin-top:0.5%;
+	margin-bottom:0%;
+	font-size:16px;
+}
+.month
+{
+	border:none;
+	font-size:16px;
+	width:27px;
+	margin-left:10px;
+}
+.year
+{
+	border:none;
+	font-size:16px;
+	width:40px;
+	margin-left:3px;
+}
+.cvvdiv
+{
+	border:1px solid #333;
+	height:10%;
+	margin-left:2%;
+	width:19.5%;
+	border-radius:5px;
+	margin-top:5px;
+	float:left;
+}
+.cvv
+{
+	border:none;
+	font-size:16px;
+	width:50px;
+	margin-left:3px;
+}
+.paybuttonsdiv
+{
+	border:none;
+	float:left;
+}
+.paybuttons
+{
+	background-color:#099e88;
+	border:none;
+	font-size:11px;
+	height:25px;
+	width:150px;
+	color:#FFF;
+	border-radius:5px;
+	cursor:pointer;
+	margin-left:2%;
+	margin-top:8px;
+}
+.paybuttons:hover
+{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color:#000;
+}
+
+</style>
+</head>
+
+<body>
+<div id="PaymentPageContainer">
+	<div id="hd1" class="hsd">
+        <a href="../E-SurfAndShop Landing Page.html" class="header">Download App</a>
+        <a href="" class="header">Prime User Login</a>
+        <a href="" class="header">Help Center?</a>
+    </div>
+	<div id="hd2" class="hsd">
+    <a href="MainHomePage.html"><img class="logo" src="../../Documents/ASSETS/buy page/Asset 1.png" height="50%" /></a>
+    <p class="headersecuritytext">100% Payment Protection, Easy Returns Policy</p>
+    </div>
+        <div id="hd3" class="hsd">
+            <div id="hd3container1">
+                <div id="hd3sd1" class="hsd">
+                    <p class="blockname1">4. MAKE PAYMENT</p>
+                </div>
+                
+                <div id="hd3sd2" class="hsd">
+                
+                <p class="select1"><input class="radiobuttons" type="radio" name="paymethodselect" checked="checked" name="paymentmethod" /> Debit Card OR Credit card </p>
+                <div class="paymethoddiv1">
+                <form>
+                <div class="cardno"><input class="cardnotextbox" type="text" maxlength="16" required="required" placeholder="Enter Debit Card No..." /><img class="paygatewayimg" src="" /></div>
+				<div class="expcvv">
+                <div class="expiry"><p class="exptext">Expiry </p><input class="month" type="no" maxlength="2" placeholder="mm" required="required"/>/<input class="year" type="no" maxlength="4" placeholder="yy" required="required"/></div><div class="cvvdiv"><input class="cvv" type="no" maxlength="3" placeholder="  CVV" required="required" /></div>
+                </div>
+                <div class="paybuttonsdivdiv"><input class="paybuttons" type="submit" value="PAY SECURELY" /></div>
+                </form>
+                </div>
+                
+                <p class="select"><input class="radiobuttons" type="radio" name="paymethodselect" name="paymentmethod" /> Net Banking </p>
+                <div class="paymethoddiv">
+                <form>
+                <div class="cardno"><input class="cardnotextbox" type="no" maxlength="16" required="required" value="HDFC BANK" readonly="readonly" /><img class="paygatewayimg" src="" /></div>
+                <div class="paybuttonsdivdiv"><input class="paybuttons" type="submit" value="PROCEED" /></div>
+                </form>
+                </div>
+                
+                <p class="select"><input class="radiobuttons" type="radio" name="paymethodselect" name="paymentmethod" /> Wallets </p>
+                <div class="paymethoddiv">
+                <form>
+                <div class="cardno"><input class="cardnotextbox" type="no" maxlength="16" required="required" value="PAYTM WALLET ISSUED BY PAYTM BANK" readonly="readonly" /><img class="paygatewayimg" src="" /></div>
+                <div class="paybuttonsdivdiv"><input class="paybuttons" type="submit" value="PAY" /></div>
+                </form>
+                </div>
+                
+                <p class="select"><input class="radiobuttons" type="radio" name="paymethodselect" name="paymentmethod" /> Gift Vauchers </p>
+                <div class="paymethoddiv">
+                <form>
+                <div class="cardno"><input class="cardnotextbox" type="no" maxlength="12" required="required" placeholder="Enter 12 digits gift voucher code" /><img class="paygatewayimg" src="" /></div>
+                <div class="paybuttonsdivdiv"><input class="paybuttons" type="submit" value="REDEEM" /></div>
+                </form>
+                </div>
+                
+                <p class="select"><input class="radiobuttons" type="radio" name="paymethodselect" name="paymentmethod" /> Cash On Delivery </p>
+                <div class="paymethoddiv6">
+                <form>
+                <div class="paybuttonsdivdiv"><input class="paybuttons" type="submit" value="Pay On Delivery" /></div>
+                </form>
+                </div>
+                </div>
+            </div>
+        
+        <div id="hd3sd3" class="hsd">
+        <img src="../../Documents/ASSETS/buy form/Asset 6.png" width="100%" height="100%"  />
+        </div>
+        <div id="hd3sd4" class="hsd">
+        <img src="../../Documents/ASSETS/buy form/Asset 5.png" width="100%" height="100%"  />
+        </div>
+        <div id="hd3sd5" class="hsd">
+        <img src="../../Documents/ASSETS/buy form/Asset 4.png" width="100%" height="100%"  />
+        </div>
+        <div id="hd3sd6" class="hsd">
+			<p>&lowast; The conditions under which a seller will complete a sale. Typically, these terms
+specify the period allowed to a buyer to pay off the amount due, and may demand
+cash in advance, cash on delivery, a deferred payment period of 30 days or more, or
+other similar provisions.</p>
+        </div>
+    </div>
+    
+    
+    
+</div>
+</body>
+</html>
