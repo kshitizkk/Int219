@@ -2,6 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="angular.min.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="../CSS/CheckoutPage.css" />	
 <link rel="stylesheet" type="text/css" media="all" href="../CSS/CheckoutPage.css" />
 <title>🚚E-SurfAndShop/Item/Checkout</title>
 </head>
@@ -53,13 +55,43 @@
                         </div>
                         <div id="hd3sd3ssd5sssd3">
                         <p class="quantity">
-                        		<button id="plusbutton" class="quantitybutton">+</button>
-                                <input class="quantitytextbox" type="text" maxlength="1" size="1" name="quantity" value="1" />
-                                <button id="minusbutton" class="quantitybutton">-</button>
+				 <div ng-app="">
+                        		<button id="plusbutton" class="quantitybutton" ng-click="counter= counter+1">+</button>
+                                <p> {{counter}}
+                               <button id="minusbutton" class="quantitybutton" ng-click="counter= counter-1">-</button>
+                            </div>    
                                 
-                                <p class="deliveryoption">5Nov to 10Nov 2018</p>
-                                <p class="finalprice">Price: Rs. 14500<br />Delivery: +49</p>
-                        </p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                        <script>
+                                    var xy="";
+                                    var data1 ={
+                                        "sdate" : "8th To",
+                                        "edate" : "12th November 2020",
+                                        }
+                                    
+                               var data2 = '{"sdate" : "8th November 2020" ,"edate" :"12th November 2020"}'
+                               data1.edate='12th November 2020'
+                                    document.write(data1["sdate"] + ' ')
+                                var d=JSON.parse(data2)
+                                
+                                document.write(d.edate)
+                                </script>  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <script>
+                                    var x="";
+                                    var data ={
+                                        "price" : "14500",
+                                        "currency" : "RS",
+                                        }
+                                    
+                                var data2 = '{"price" : "14,500" ,"currency" :"RS"}'
+                                  data.price='14,500'
+                                    document.write(data["currency"] + ' ')
+                                var d=JSON.parse(data2)
+                                document.write(d.price)
+                                </script>  
                         </div>
                         
                     </div>
